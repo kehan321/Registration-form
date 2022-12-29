@@ -1,0 +1,118 @@
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 40px 100px;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      display: flex;
+      background-color: rgb(93, 93, 204);
+    }
+
+    .container {
+
+      /* text-align: center; */
+      padding: 50px;
+      background-color: aliceblue;
+    }
+
+    input,
+    select {
+      width: 220px;
+      height: 35px;
+      margin: 10px;
+      /* border: none; */
+      display: block;
+
+    }
+
+    input:focus {
+      border: none;
+    }
+
+    .btn {
+      width: 220px;
+      height: 30px;
+      margin: 10px;
+      color: beige;
+      border-radius: 50px;
+      background-color: green;
+      border: 2px solid;
+    }
+
+    .btn:hover {
+      background-color: rgb(74, 114, 10);
+    }
+
+    input[type="text"] {
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+    }
+
+    .fnt,
+    .ltn {
+      display: inline-block;
+    }
+
+    .container-fluid{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .getdata{
+      padding: 50px;
+      margin-left: 100px;
+      background-color: aqua;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid"> 
+    <div class="container">
+      <h1>Registration Form</h1>
+      <div class="fnt">
+        <input type="text" placeholder=" FistName" name="fname" id="fn" required></label>
+      </div>
+
+      <div class="ltn">
+        <input type="text" placeholder=" LastName" name="lst" id="ln" required></label><br>
+      </div>
+
+      <div class="emil">
+        <input type="email" placeholder=" Email" name="email" id="email" required>
+      </div>
+
+      <input type="password" placeholder=" Password" name="psw" id="psw" required>
+      <input type="number" placeholder=" Phone no" name="" required id="con">
+      <select name="sel" id="Course" required>
+
+        <option value="C">C</option>
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+      </select>
+      <button id="btn" class="btn" onclick="getvalue()" class="registerbtn">Register</button><br>
+      <button id="btn2" class="btn" onclick="clearAll()" class="registerbtn">Remove</button>
+    </div>
+    <div class="  getdata">
+      <h1>Student List</h1>
+      <ol id="parent"></ol>
+    </div>
+ </div>
+  <script type="module" src="app.js"></script>
+
+
+</body>
+
+</html>
